@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+body {
+  background: #cfcece;
+}
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 16px 10px 10px;
+  p {
+    color: #1d1e21;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-left: 8px;
+    flex-grow: 1;
+  }
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #1879ff;
+    margin-left: 8px;
+  }
+}
+.container {
+  max-width: 905px;
+  margin: 0 auto;
+  display: flex;
+  background: #fff;
+  max-height: 683px;
+}
+.sidebar {
+  min-width: 284px;
+  border-right: 1px solid #0000001a;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  width: 100%;
+  overflow-y: auto;
+}
+.posts-wrapper {
+  padding: 0 50px;
+  margin-top: 14px;
+}
+.header {
+  width: 100%;
+  height: 42px;
+  background: #00000033;
+  border-bottom: 1px solid #d9d9d9;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease-in-out;
+  padding: 0 10px;
+  h3 {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+  }
+  &.visible {
+    transform: translateY(0);
+  }
+  &.hidden {
+    transform: translateY(-100%);
+  }
+}
+.card-title {
+  color: #1d1e21;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  margin-top: 14px;
+  margin-bottom: 11px;
+}
+.card-descr {
+  color: #1d1e21;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+.post-date {
+  color: #ababab;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  margin-left: 12px;
+}
+.post-image {
+  display: block;
+  width: 413px;
+  height: 280px;
+  margin: 0 auto;
+  object-fit: cover;
+}
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.post-card {
+  padding-bottom: 35.5px;
+}
+.link-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex-grow: 1;
+}
+.sidebar-footer {
+  padding: 16px 0;
+}
+.sidebar-footer-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 16px 8px 12px;
+  color: #8f98a6;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+}
